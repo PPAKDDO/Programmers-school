@@ -1,0 +1,9 @@
+def solution(s):
+    answer = ''
+    a = len(s)
+    if a % 2 == 1:
+        answer = s[int(a/2):int(a/2)+1]
+    else:
+        answer = s[int(a/2)-1:int(a/2)+1]
+        
+    return answer
