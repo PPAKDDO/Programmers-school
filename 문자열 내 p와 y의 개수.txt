@@ -1,0 +1,15 @@
+def solution(s):
+    l = s.lower()
+    lower_p = []
+    lower_y = []
+    for i in list(l):
+        if i == 'p':
+            lower_p.append(i)
+        elif i == 'y':
+            lower_y.append(i)
+    if len(lower_p) == len(lower_y):
+        answer = True
+        return answer
+    else:
+        answer = False
+        return answer
