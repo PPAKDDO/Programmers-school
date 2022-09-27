@@ -1,0 +1,22 @@
+def solution(s):
+    answer = ''
+    sp_s = s.split(' ')
+    for i in range(len(sp_s)):
+        if i != len(sp_s)-1:
+            answer += sp_s[i][0].upper() + sp_s[i][1:].lower() + ' '
+        else:
+            answer += sp_s[i][0].upper() + sp_s[i][1:].lower()
+    return answer
+
+스플릿을 쓰면 공백을 따로 넣어줘야함,
+그래서 런타임 오류가 발생,
+스플릿을 빼고 코드 작성
+
+def solution(s):
+    answer = s[0].upper() 
+    for i in range(1, len(s)):
+        if s[i-1] == " " and s[i] != " ":
+            answer += s[i].upper() 
+        else:
+            answer += s[i].lower()
+    return answer
