@@ -1,0 +1,4 @@
+def solution(s):
+    a = "".join(s)
+    answer = int(a)
+    return answer
