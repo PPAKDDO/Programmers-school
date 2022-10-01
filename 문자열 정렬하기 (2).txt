@@ -1,0 +1,7 @@
+def solution(my_string):
+    answer = ''
+    a = my_string.lower()
+    b = list(a)
+    b.sort(reverse=False)
+    answer = ''.join(b)
+    return answer
