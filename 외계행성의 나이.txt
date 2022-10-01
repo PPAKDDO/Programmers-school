@@ -1,0 +1,8 @@
+def solution(age):
+    answer = ''
+    result = ['a','b','c','d','e','f','g','h','i','j']
+    
+    a_map = list(map(int, str(age)))
+    for i in range(len(a_map)):
+        answer += result[a_map[i]]
+    return answer
