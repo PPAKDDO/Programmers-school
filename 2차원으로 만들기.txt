@@ -1,0 +1,7 @@
+import numpy as np
+
+def solution(num_list, n):
+    answer = [[]]
+    a = np.array(num_list)
+    answer = a.reshape(int(len(num_list)/n),n)
+    return answer.tolist()
