@@ -1,0 +1,8 @@
+def solution(before, after):
+    answer = 0
+    from collections import Counter
+    if Counter(before) == Counter(after):
+        answer = 1
+    else:
+        answer = 0
+    return answer
