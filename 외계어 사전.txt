@@ -1,0 +1,13 @@
+def solution(spell, dic):
+    answer = 0
+    spell.sort()
+    result = ''.join(spell)
+    for i in dic:
+        a = list(i)
+        a.sort()
+        if result in ''.join(a):
+            answer = 1
+            break
+        else:
+            answer = 2
+    return answer
