@@ -1,0 +1,7 @@
+def solution(numbers, k):
+    answer = 0
+    numbers = numbers*1000
+    for i in range(1,k+1):
+        answer = numbers[2*i-2]
+        
+    return answer
