@@ -1,0 +1,13 @@
+def solution(numbers):
+    answer = ''
+    result = ''
+    a = {'zero':0,'one':1,'two':2,'three':3,'four':4,'five':5,'six':6,'seven':7,'eight':8,'nine':9}
+    for i in numbers:
+        result += i
+        for j in range(0,10):
+            if list(a.keys())[j] in result:
+                answer += str(list(a.values())[j])
+                result = result.strip(list(a.keys())[j])
+        
+    
+    return int(answer)
