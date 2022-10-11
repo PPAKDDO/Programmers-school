@@ -1,0 +1,16 @@
+from collections import Counter
+
+def solution(array):
+    answer = 0
+    cnt = 0
+    a = list(Counter(array).values())
+    for i in a:
+        if i == max(a):
+            for key, value in Counter(array).items():
+                if value == i:
+                    answer = key
+            cnt += 1
+    if cnt != 1:
+        answer = -1
+
+    return answer
