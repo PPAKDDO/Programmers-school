@@ -1,0 +1,11 @@
+def solution(s):
+    answer = ''
+    result = []
+    a = list(s)
+    for i in a:
+        if a.count(i) == 1:
+            result.append(i)
+    result.sort()
+    answer = ''.join(result)
+                
+    return answer
