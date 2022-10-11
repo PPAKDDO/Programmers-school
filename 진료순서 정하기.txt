@@ -1,0 +1,11 @@
+def solution(emergency):
+    answer = []
+    dic = dict()
+    a = emergency.copy()
+    a.sort(reverse=True)
+    for i,j in enumerate(a, 1):
+        dic[j] = i
+    for i in range(len(emergency)):
+        answer.append(dic[emergency[i]])
+            
+    return answer
